@@ -8,9 +8,12 @@ Gem::Specification.new do |gem|
   gem.version       = Babbler::VERSION
   gem.authors       = ["JP Slavinsky"]
   gem.email         = ["jpslav@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Creates nonsense babble in the form of an adjective plus a noun}
+  gem.summary       = %q{Creates nonsense babble in the form of an adjective plus a noun. 
+                         Useful for creating code phrases or random names.  The words are 
+                         limited to common ones, so the number of unique combinations is 
+                         only around 5e6.}
+  gem.homepage      = "http://github.com/lml/babbler"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
