@@ -8,10 +8,13 @@ module Babbler
     def babble(seed = nil)
       prng = Random.new(seed || Random.new_seed)
 
-      adjective = ADJECTIVES[prng.rand(ADJECTIVES.length)]
+      adjectives = []
+      Babbler.config.num_adjectives.times do
+        adjectives.push(ADJECTIVES[prng.rand(ADJECTIVES.length)])
+      end
       noun = NOUNS[prng.rand(NOUNS.length)]
 
-      "#{adjective} #{noun}"
+      "#{adjectives.join(' ')} #{noun}"
     end
     
     ###########################################################################
@@ -27,18 +30,18 @@ module Babbler
     #
     
     def configure
-      yield configuration
+      yield config
     end
 
-    def configuration
+    def config
       @configuration ||= Configuration.new
     end
 
     class Configuration
-      attr_accessor :example_setting
+      attr_accessor :num_adjectives
 
       def initialize      
-        @example_setting = nil
+        @num_adjectives = 1
         super
       end
     end
