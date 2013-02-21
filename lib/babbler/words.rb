@@ -46,7 +46,6 @@ module Babbler
     group
     country
     every
-    American
     part
     such
     few
@@ -162,7 +161,6 @@ module Babbler
     personal
     third
     baby
-    Republican
     red
     difficult
     billion
@@ -274,7 +272,6 @@ module Babbler
     bar
     beautiful
     heavy
-    sexual
     tough
     surface
     skin
@@ -317,31 +314,25 @@ module Babbler
     nine
     involved
     nuclear
-    British
     camp
     afternoon
     dozen
     beginning
-    African
     sorry
     complete
     normal
-    Chinese
     stone
     wood
     mountain
     supposed
     winter
-    Soviet
     sales
     resident
     gold
     farm
     potential
-    European
     independent
     district
-    Christian
     express
     willing
     previous
@@ -362,7 +353,6 @@ module Babbler
     associate
     warm
     annual
-    French
     responsible
     regular
     spread
@@ -377,7 +367,6 @@ module Babbler
     wonderful
     growing
     grade
-    Indian
     quiet
     dress
     aware
@@ -417,7 +406,6 @@ module Babbler
     domestic
     northern
     dry
-    Russian
     sweet
     fourth
     salt
@@ -446,7 +434,6 @@ module Babbler
     regional
     novel
     jury
-    Iraqi
     union
     expensive
     yellow
@@ -458,7 +445,6 @@ module Babbler
     comfortable
     angry
     hearing
-    Japanese
     thick
     emergency
     unique
@@ -470,21 +456,17 @@ module Babbler
     actual
     setting
     sick
-    Catholic
     component
     slow
     brown
     pilot
-    English
     funny
     correct
-    Jewish
     blame
     due
     crazy
     ancient
     golden
-    German
     used
     equal
     typical
@@ -544,7 +526,6 @@ module Babbler
     sharp
     creative
     lower
-    gay
     proper
     guilty
     technical
@@ -553,7 +534,6 @@ module Babbler
     illegal
     alternative
     signal
-    Israeli
     twenty
     spiritual
     musical
@@ -583,7 +563,6 @@ module Babbler
     saving
     desert
     double
-    Spanish
     print
     formal
     joint
@@ -591,7 +570,6 @@ module Babbler
     consistent
     grand
     racial
-    Mexican
     elect
     glad
     ordinary
@@ -609,7 +587,6 @@ module Babbler
     boss
     fundamental
     severe
-    Asian
     digital
     usual
     psychological
@@ -654,7 +631,6 @@ module Babbler
     false
     extreme
     quit
-    Latin
     honest
     respondent
     giant
@@ -671,9 +647,7 @@ module Babbler
     armed
     clinical
     routine
-    Muslim
     activist
-    Islamic
     incorporate
     hip
     ultimate
@@ -690,8 +664,6 @@ module Babbler
     distant
     satellite
     chocolate
-    Italian
-    Canadian
     universal
     rank
     super
@@ -770,7 +742,6 @@ module Babbler
     mere
     exciting
     radical
-    Irish
     honey
     correspondent
     pale
@@ -918,13 +889,10 @@ module Babbler
     missing
     flash
     reliable
-    Roman
     occasional
     administrative
     deadly
-    Hispanic
     monthly
-    Korean
     initiate
     sixth
     bay
@@ -1053,8 +1021,6 @@ module Babbler
     divine
     elder
     pro
-    Dutch
-    Greek
     invitation
     talented
     stiff
@@ -1083,7 +1049,6 @@ module Babbler
     opposed
     tropical
     calm
-    Cuban
     spectacular
     sheer
     immune
@@ -1107,7 +1072,6 @@ module Babbler
     mechanic
     underlying
     eleven
-    sexy
     costly
     ambitious
     influential
@@ -1172,7 +1136,6 @@ module Babbler
     breathing
     supportive
     informal
-    Persian
     pat
     perceived
     sole
@@ -1189,7 +1152,6 @@ module Babbler
     halfway
     striking
     embarrassed
-    fucking
     isolated
     suspicious
     eligible
@@ -1360,7 +1322,6 @@ module Babbler
     start
     hand
     might
-    American
     show
     part
     place
@@ -1641,7 +1602,6 @@ module Babbler
     attention
     draw
     film
-    Republican
     tree
     source
     red
@@ -1801,7 +1761,6 @@ module Babbler
     outside
     analysis
     benefit
-    sex
     forward
     lawyer
     present
@@ -1858,7 +1817,6 @@ module Babbler
     expert
     spring
     firm
-    Democrat
     radio
     visit
     management
@@ -2052,7 +2010,6 @@ module Babbler
     press
     conflict
     spirit
-    British
     argument
     camp
     brain
@@ -2066,7 +2023,6 @@ module Babbler
     battle
     beginning
     date
-    African
     crisis
     fan
     stick
@@ -2075,7 +2031,6 @@ module Babbler
     vision
     status
     normal
-    Chinese
     ship
     solution
     stone
@@ -2111,7 +2066,6 @@ module Babbler
     club
     farm
     potential
-    European
     presence
     independent
     district
@@ -2119,7 +2073,6 @@ module Babbler
     reader
     contract
     crowd
-    Christian
     express
     apartment
     willing
@@ -2184,8 +2137,6 @@ module Babbler
     aspect
     failure
     annual
-    French
-    Christmas
     comment
     responsible
     affair
@@ -2232,7 +2183,6 @@ module Babbler
     mistake
     location
     clothes
-    Indian
     quiet
     dress
     promise
@@ -2247,7 +2197,6 @@ module Babbler
     voter
     learning
     bus
-    hell
     moral
     United
     category
@@ -2327,7 +2276,6 @@ module Babbler
     fuel
     leaf
     dry
-    Russian
     instruction
     pool
     climb
@@ -2386,8 +2334,6 @@ module Babbler
     novel
     code
     jury
-    breast
-    Iraqi
     theme
     storm
     union
@@ -2427,7 +2373,6 @@ module Babbler
     notion
     capture
     earth
-    Japanese
     chest
     thick
     cash
@@ -2451,7 +2396,6 @@ module Babbler
     sheet
     ought
     ensure
-    Catholic
     extent
     component
     mix
@@ -2469,7 +2413,6 @@ module Babbler
     guide
     circumstance
     snow
-    English
     politician
     steal
     slip
@@ -2478,7 +2421,6 @@ module Babbler
     funny
     soil
     surgery
-    Jewish
     blame
     estimate
     due
@@ -2498,7 +2440,6 @@ module Babbler
     silence
     rating
     motion
-    German
     gender
     fee
     landscape
@@ -2609,7 +2550,6 @@ module Babbler
     decline
     cable
     expose
-    Jew
     narrow
     cream
     secretary
@@ -2638,7 +2578,6 @@ module Babbler
     sharp
     lower
     explanation
-    gay
     campus
     proper
     plus
@@ -2654,7 +2593,6 @@ module Babbler
     assistance
     forever
     regard
-    Israeli
     association
     twenty
     knock
@@ -2739,10 +2677,8 @@ module Babbler
     desert
     error
     cop
-    Arab
     double
     sand
-    Spanish
     print
     preserve
     passage
@@ -2774,7 +2710,6 @@ module Babbler
     phase
     joke
     coat
-    Mexican
     symptom
     manufacturer
     philosophy
@@ -2835,7 +2770,6 @@ module Babbler
     emphasis
     boot
     monitor
-    Asian
     entertainment
     bean
     evaluation
@@ -2956,7 +2890,6 @@ module Babbler
     drawing
     protein
     absence
-    Latin
     jail
     diversity
     pace
@@ -2992,7 +2925,6 @@ module Babbler
     phrase
     ingredient
     stake
-    Muslim
     fiber
     activist
     snap
@@ -3027,8 +2959,6 @@ module Babbler
     satellite
     clock
     chocolate
-    Italian
-    Canadian
     ceiling
     sweep
     advertising
@@ -3095,7 +3025,6 @@ module Babbler
     odd
     rice
     bullet
-    Bible
     chart
     square
     concentration
@@ -3212,7 +3141,6 @@ module Babbler
     variation
     comfort
     radical
-    Irish
     honey
     correspondent
     pale
@@ -3379,9 +3307,7 @@ module Babbler
     boom
     register
     heritage
-    God
     dominant
-    shit
     lemon
     wander
     economics
@@ -3599,8 +3525,6 @@ module Babbler
     developer
     excitement
     beef
-    Islam
-    Roman
     architecture
     elbow
     allegation
@@ -3608,7 +3532,6 @@ module Babbler
     monthly
     duck
     dose
-    Korean
     initiate
     lecture
     van
@@ -3931,11 +3854,9 @@ module Babbler
     elder
     pro
     inspiration
-    Dutch
     quantity
     trailer
     mate
-    Greek
     genius
     monument
     bid
@@ -4018,7 +3939,6 @@ module Babbler
     revelation
     calm
     jewelry
-    Cuban
     haul
     wagon
     spectacular
@@ -4026,7 +3946,6 @@ module Babbler
     sheer
     immune
     reliability
-    ass
     bush
     exotic
     clip
@@ -4087,7 +4006,6 @@ module Babbler
     ambition
     touchdown
     breeze
-    Christianity
     translation
     dissolve
     gut
@@ -4243,7 +4161,6 @@ module Babbler
     journalism
     robot
     dip
-    Persian
     feather
     sphere
     boast
@@ -4292,7 +4209,6 @@ module Babbler
     carrot
     toll
     rim
-    fucking
     cling
     blink
     wheelchair
@@ -4326,7 +4242,6 @@ module Babbler
     constraint
     expedition
     similarity
-    butt
     lid
     bulk
     sprinkle
@@ -4382,7 +4297,6 @@ module Babbler
     rental
     fantastic
     fragment
-    screw
     warmth
     undergraduate
     headache
