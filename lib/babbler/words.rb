@@ -14,7 +14,6 @@ module Babbler
     more
     first
     new
-    man
     here
     many
     well
@@ -174,7 +173,7 @@ module Babbler
     choice
     single
     south
-    Congress
+    congress
     material
     medical
     close
@@ -359,7 +358,6 @@ module Babbler
     soft
     review
     cross
-    female
     afraid
     quarter
     native
@@ -397,7 +395,6 @@ module Babbler
     plastic
     tall
     otherwise
-    male
     alive
     chicken
     shut
@@ -689,7 +686,7 @@ module Babbler
     slave
     accurate
     elite
-    Olympic
+    olympic
     dirt
     odd
     tight
@@ -798,7 +795,6 @@ module Babbler
     offensive
     dominant
     hungry
-    naked
     legitimate
     wound
     dependent
@@ -827,7 +823,6 @@ module Babbler
     awful
     pet
     widespread
-    killing
     lovely
     everyday
     adequate
@@ -1269,7 +1264,6 @@ module Babbler
     first
     day
     use
-    man
     find
     here
     thing
@@ -1280,7 +1274,6 @@ module Babbler
     even
     back
     good
-    woman
     life
     child
     work
@@ -1438,8 +1431,6 @@ module Babbler
     low
     win
     research
-    girl
-    guy
     food
     moment
     air
@@ -1450,7 +1441,6 @@ module Babbler
     education
     foot
     second
-    boy
     able
     age
     policy
@@ -1458,11 +1448,9 @@ module Babbler
     process
     music
     buy
-    human
     wait
     serve
     market
-    die
     send
     sense
     build
@@ -1473,14 +1461,12 @@ module Babbler
     cut
     college
     interest
-    death
     course
     someone
     experience
     behind
     reach
     local
-    kill
     six
     effect
     class
@@ -1505,7 +1491,6 @@ module Babbler
     leader
     light
     voice
-    wife
     whole
     police
     mind
@@ -1631,8 +1616,7 @@ module Babbler
     daughter
     administration
     south
-    husband
-    Congress
+    congress
     floor
     campaign
     material
@@ -1906,7 +1890,6 @@ module Babbler
     item
     reality
     coach
-    Mrs
     yard
     beat
     violence
@@ -1964,7 +1947,7 @@ module Babbler
     fresh
     forest
     video
-    Senate
+    senate
     reform
     access
     restaurant
@@ -2149,7 +2132,6 @@ module Babbler
     egg
     belief
     anybody
-    murder
     gift
     religion
     review
@@ -2159,7 +2141,6 @@ module Babbler
     speed
     cross
     influence
-    female
     youth
     wave
     quarter
@@ -2198,7 +2179,7 @@ module Babbler
     learning
     bus
     moral
-    United
+    united
     category
     victory
     academic
@@ -2249,7 +2230,6 @@ module Babbler
     plate
     hate
     writing
-    male
     expression
     football
     chicken
@@ -2940,7 +2920,6 @@ module Babbler
     barrier
     minor
     provision
-    killer
     assign
     gang
     developing
@@ -3075,7 +3054,7 @@ module Babbler
     unknown
     offense
     counter
-    DNA
+    dna
     thirty
     protest
     crash
@@ -3265,7 +3244,6 @@ module Babbler
     handful
     horizon
     downtown
-    girlfriend
     prompt
     cholesterol
     adjustment
@@ -3371,7 +3349,6 @@ module Babbler
     pet
     miracle
     rhythm
-    killing
     lovely
     sin
     charity
@@ -3690,7 +3667,6 @@ module Babbler
     signature
     wow
     rebel
-    spouse
     fluid
     pension
     resume
