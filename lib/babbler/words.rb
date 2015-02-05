@@ -304,7 +304,6 @@ module Babbler
     concerned
     effective
     original
-    hurt
     basic
     plane
     refer
@@ -1966,7 +1965,6 @@ module Babbler
     original
     troop
     income
-    hurt
     species
     track
     basic
