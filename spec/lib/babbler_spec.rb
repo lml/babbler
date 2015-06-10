@@ -6,13 +6,13 @@ describe Babbler do
     it "should return an appropriate random babble" do
       babble = Babbler.babble
       words = babble.split(" ")
-      words.length.should == 2
-      Babbler::ADJECTIVES.should include(words[0])
-      Babbler::NOUNS.should include(words[1])
+      expect(words.length).to eq(2)
+      expect(Babbler::ADJECTIVES.include? words[0]).to be(true)
+      expect(Babbler::NOUNS.include? words[1]).to be(true)
     end
 
     it "should return the same babble given the same seed" do
-      Babbler.babble(1).should == Babbler.babble(1)
+      expect(Babbler.babble(1)).to eq(Babbler.babble(1))
     end
 
     it "should return two adjectives when configured like that" do
@@ -21,9 +21,10 @@ describe Babbler do
       end
       babble = Babbler.babble
       words = babble.split(" ")
-      words.length.should == 3
-      Babbler::ADJECTIVES.should include(words[0], words[1])
-      Babbler::NOUNS.should include(words[2])
+      expect(words.length).to eq(3)
+      expect(Babbler::ADJECTIVES.include? words[0]).to be(true)
+      expect(Babbler::ADJECTIVES.include? words[1]).to be(true)
+      expect(Babbler::NOUNS.include? words[2]).to be(true)
     end
   end
 
