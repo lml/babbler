@@ -32,6 +32,9 @@ with the default values shown:
       # Use a different number of adjectives at the start of the
       # phrase, e.g. with a value of 2 you might get 'hard ancient prosecutor'
       config.num_adjectives = 1
+      # Use a "safe" word list. Words that produce HR-friendly combinations.
+      # The default word lists are not necessarily safe.
+      config.safe_words = false
     end
 
 ## Usage
