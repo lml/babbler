@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Babbler do
-  
   describe "#babble" do
     it "should return an appropriate random babble" do
       babble = Babbler.babble
@@ -26,6 +25,17 @@ describe Babbler do
       expect(Babbler::ADJECTIVES.include? words[1]).to be(true)
       expect(Babbler::NOUNS.include? words[2]).to be(true)
     end
-  end
 
+    it "should use the safe word list when in safe mode" do
+      Babbler.configure do |config|
+        config.num_adjectives = 1
+        config.safe_words = true
+      end
+      babble = Babbler.babble
+      words = babble.split(" ")
+      expect(words.length).to eq(2)
+      expect(Babbler::SAFE_ADJECTIVES.include? words[0]).to be(true)
+      expect(Babbler::SAFE_NOUNS.include? words[1]).to be(true)
+    end
+  end
 end
