@@ -48,6 +48,8 @@ To get a random babble, type:
 
 To always be able to get a specific babble, pass an integer in:
 
+**Note: This is not guaranteed to be the same result over major versions**
+
     Babbler.babble(42)
 
 ## Contributing
