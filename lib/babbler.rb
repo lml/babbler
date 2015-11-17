@@ -12,13 +12,11 @@ module Babbler
 
       babble_words = []
 
-      Babbler.config.num_adjectives.times do
-        babble_words.push(adjectives[prng.rand(adjectives.length)])
+      Babbler.config.format.gsub(' ', '').split('').each do |f|
+        babble_words.push(send("format_#{f}")[prng.rand(adjectives.length)])
       end
 
-      babble_words.push(nouns[prng.rand(nouns.length)])
-
-      babble_words.join(' ')
+      babble_words.join(' ').strip
     end
 
     def words
@@ -34,13 +32,15 @@ module Babbler
       end
     end
 
-    def adjectives
+    def format_a
       words[:adjectives]
     end
+    alias :adjectives :format_a
 
-    def nouns
+    def format_n
       words[:nouns]
     end
+    alias :nouns :format_n
 
     ###########################################################################
     #
@@ -63,11 +63,11 @@ module Babbler
     end
 
     class Configuration
-      attr_accessor :num_adjectives
+      attr_accessor :format
       attr_accessor :word_list
 
       def initialize
-        @num_adjectives = 1
+        @format = 'an'
         @word_list = :original
         super
       end
