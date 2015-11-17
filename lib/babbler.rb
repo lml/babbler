@@ -12,7 +12,7 @@ module Babbler
 
       babble_words = []
 
-      supported_format.collect do |f|
+      supported_formats.collect do |f|
         babble_words.push(send("format_#{f}")[prng.rand(adjectives.length)])
       end
 
@@ -74,7 +74,7 @@ module Babbler
     end
 
     private
-    def supported_format
+    def supported_formats
       sanitized = (Babbler.config.format || '').downcase
       formats = sanitized.split('').reject { |i| i.match(/[^an]/) }
       formats.any? ? formats : ['a', 'n']
