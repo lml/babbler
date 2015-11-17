@@ -1,6 +1,6 @@
 # Babbler
 
-Babbler is a Ruby gem that will make short nonsense phrases for you.  The phrases nominally consist of an adjective followed by a noun, though the number of adjectives can be configured.  The words in the phrase are common English words.
+Babbler is a Ruby gem that will make short nonsense phrases for you.  The phrases nominally consist of an adjective followed by a noun, though the format can be configured.  The words in the phrase are common English words.
 
 ## Installation
 
@@ -29,9 +29,10 @@ The following example lists all of the available configuration options,
 with the default values shown:
 
     Babbler.configure do |config|
-      # Use a different number of adjectives at the start of the
-      # phrase, e.g. with a value of 2 you might get 'hard ancient prosecutor'
-      config.num_adjectives = 1
+      # Use a different format for the resulting phrase
+      # phrase, e.g. with a value of 'nn' you might get 'prosecutor dog'
+      config.format = 'an'
+
       # Choose a different word list. Options:
       #   :original - the original word list in Babbler
       #   :safer_words_1 - the original list with potentially awkward words removed
@@ -46,6 +47,8 @@ To get a random babble, type:
     Babbler.babble
 
 To always be able to get a specific babble, pass an integer in:
+
+**Note: This is not guaranteed to be the same result over major versions**
 
     Babbler.babble(42)
 

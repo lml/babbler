@@ -10,13 +10,9 @@ module Babbler
     def babble(seed = nil)
       prng = Random.new(seed || Random.new_seed)
 
-      babble_words = []
-
-      Babbler.config.num_adjectives.times do
-        babble_words.push(adjectives[prng.rand(adjectives.length)])
+      babble_words = supported_formats.collect do |f|
+        send("format_#{f}")[prng.rand(send("format_#{f}").length)]
       end
-
-      babble_words.push(nouns[prng.rand(nouns.length)])
 
       babble_words.join(' ')
     end
@@ -63,14 +59,24 @@ module Babbler
     end
 
     class Configuration
-      attr_accessor :num_adjectives
+      attr_accessor :format
       attr_accessor :word_list
 
       def initialize
-        @num_adjectives = 1
+        @format = 'an'
         @word_list = :original
         super
       end
+    end
+
+    private
+    alias :format_a :adjectives
+    alias :format_n :nouns
+
+    def supported_formats
+      sanitized = (Babbler.config.format || '').downcase
+      formats = sanitized.split('').reject { |i| i.match(/[^an]/) }
+      formats.any? ? formats : ['a', 'n']
     end
 
   end

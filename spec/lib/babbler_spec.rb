@@ -3,41 +3,83 @@ require 'spec_helper'
 describe Babbler do
 
   describe "#babble" do
-    before(:each) { Babbler.config.num_adjectives = 1 }
-
-    it "should return an appropriate random babble" do
-      babble = Babbler.babble
-      words = babble.split(" ")
-      words.length.should == 2
-      Babbler.adjectives.should include(words[0])
-      Babbler.nouns.should include(words[1])
+    before do
+      Babbler.configure { |c| c.format = 'an' }
     end
 
-    it "should return the same babble given the same seed" do
-      Babbler.babble(1).should == Babbler.babble(1)
+    it "returns an appropriate random babble" do
+      words = Babbler.babble.split(" ")
+
+      expect(words.length).to be 2
+      expect(Babbler.adjectives).to include(words.first)
+      expect(Babbler.nouns).to include(words.last)
     end
 
-    it "should return two adjectives when configured like that" do
-      Babbler.configure do |config|
-        config.num_adjectives = 2
+    it "returns the same babble given the same seed" do
+      expect(Babbler.babble(1)).to eq(Babbler.babble(1))
+    end
+
+    it "returns in the format configured" do
+      Babbler.configure { |c| c.format = 'aa' }
+
+      words = Babbler.babble.split(' ')
+
+      expect(words.length).to be 2
+      expect(Babbler.adjectives).to include(words.first, words.last)
+    end
+
+    it 'ignores spaces in the format' do
+      Babbler.configure { |c| c.format = 'a na' }
+
+      words = Babbler.babble.split(' ')
+
+      expect(words.length).to be 3
+      expect(Babbler.adjectives).to include(words.first, words.last)
+      expect(Babbler.nouns).to include(words[1])
+    end
+
+    it 'ignores unsupported characters in the format' do
+      Babbler.configure { |c| c.format = 'a %z na' }
+
+      words = Babbler.babble.split(' ')
+
+      expect(words.length).to be 3
+      expect(Babbler.adjectives).to include(words.first, words.last)
+      expect(Babbler.nouns).to include(words[1])
+    end
+
+    it 'recovers from a blank format config' do
+      [' ', '', nil].each do |bad_format|
+        Babbler.configure { |c| c.format = bad_format }
+
+        words = Babbler.babble.split(' ')
+
+        expect(words.length).to be 2
+        expect(Babbler.adjectives).to include(words.first)
+        expect(Babbler.nouns).to include(words.last)
       end
-      babble = Babbler.babble
-      words = babble.split(" ")
-      words.length.should == 3
-      Babbler.adjectives.should include(words[0], words[1])
-      Babbler.nouns.should include(words[2])
     end
 
-    it "should return the last combination from safer_words_1" do
+    it 'recovers from malformed formats' do
+      Babbler.configure { |c| c.format = 'An' }
+
+      words = Babbler.babble.split(' ')
+
+      expect(words.length).to be 2
+      expect(Babbler.adjectives).to include(words.first)
+      expect(Babbler.nouns).to include(words.last)
+    end
+
+    it "returns the last combination from safer_words_1" do
       Babbler.config.word_list = :safer_words_1
       allow_any_instance_of(Random).to receive(:rand).and_return(1161, 3038)
-      Babbler.babble().should == "naval apology"
+      expect(Babbler.babble).to eq("naval apology")
     end
 
-    it "should return the last combination from california_words" do
+    it "returns the last combination from california_words" do
       Babbler.config.word_list = :california_words
       allow_any_instance_of(Random).to receive(:rand).and_return(1128, 942)
-      Babbler.babble().should == "finicky skin"
+      expect(Babbler.babble).to eq("finicky skin")
     end
   end
 
