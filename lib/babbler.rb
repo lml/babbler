@@ -12,11 +12,11 @@ module Babbler
 
       babble_words = []
 
-      Babbler.config.format.gsub(' ', '').split('').each do |f|
+      supported_format.collect do |f|
         babble_words.push(send("format_#{f}")[prng.rand(adjectives.length)])
       end
 
-      babble_words.join(' ').strip
+      babble_words.join(' ')
     end
 
     def words
@@ -71,6 +71,12 @@ module Babbler
         @word_list = :original
         super
       end
+    end
+
+    private
+    def supported_format
+      formats = (Babbler.config.format || '').split('').reject { |i| i.match(/[^an]/) }
+      formats.any? ? formats : ['a', 'n']
     end
 
   end

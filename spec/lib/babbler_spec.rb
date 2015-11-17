@@ -26,7 +26,9 @@ describe Babbler do
 
       expect(words.length).to be 2
       expect(Babbler.adjectives).to include(words.first, words.last)
+    end
 
+    it 'ignores spaces in the format' do
       Babbler.configure { |c| c.format = 'a na' }
 
       words = Babbler.babble.split(' ')
@@ -34,6 +36,28 @@ describe Babbler do
       expect(words.length).to be 3
       expect(Babbler.adjectives).to include(words.first, words.last)
       expect(Babbler.nouns).to include(words[1])
+    end
+
+    it 'ignores unsupported characters in the format' do
+      Babbler.configure { |c| c.format = 'a %z na' }
+
+      words = Babbler.babble.split(' ')
+
+      expect(words.length).to be 3
+      expect(Babbler.adjectives).to include(words.first, words.last)
+      expect(Babbler.nouns).to include(words[1])
+    end
+
+    it 'recovers from a blank format config' do
+      [' ', '', nil].each do |bad_format|
+        Babbler.configure { |c| c.format = bad_format }
+
+        words = Babbler.babble.split(' ')
+
+        expect(words.length).to be 2
+        expect(Babbler.adjectives).to include(words.first)
+        expect(Babbler.nouns).to include(words.last)
+      end
     end
 
     it "returns the last combination from safer_words_1" do
