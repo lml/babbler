@@ -60,6 +60,16 @@ describe Babbler do
       end
     end
 
+    it 'recovers from malformed formats' do
+      Babbler.configure { |c| c.format = 'An' }
+
+      words = Babbler.babble.split(' ')
+
+      expect(words.length).to be 2
+      expect(Babbler.adjectives).to include(words.first)
+      expect(Babbler.nouns).to include(words.last)
+    end
+
     it "returns the last combination from safer_words_1" do
       Babbler.config.word_list = :safer_words_1
       allow_any_instance_of(Random).to receive(:rand).and_return(1161, 3038)

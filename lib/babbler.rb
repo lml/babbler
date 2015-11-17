@@ -75,7 +75,8 @@ module Babbler
 
     private
     def supported_format
-      formats = (Babbler.config.format || '').split('').reject { |i| i.match(/[^an]/) }
+      sanitized = (Babbler.config.format || '').downcase
+      formats = sanitized.split('').reject { |i| i.match(/[^an]/) }
       formats.any? ? formats : ['a', 'n']
     end
 
