@@ -11,7 +11,7 @@ module Babbler
       prng = Random.new(seed || Random.new_seed)
 
       babble_words = supported_formats.collect do |f|
-        send("format_#{f}")[prng.rand(adjectives.length)]
+        send("format_#{f}")[prng.rand(send("format_#{f}").length)]
       end
 
       babble_words.join(' ')
